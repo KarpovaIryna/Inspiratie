@@ -285,7 +285,94 @@ body {
   }
 }
 .ba-over{
-	min-height: 100vh;
+	 background-image: url(../img/background1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  @include breakpoint(medium) {
+	padding-top: 50px;
+	padding-bottom: 50px;
+ }
+ @include breakpoint(large) {
+	padding-top: 102px;
+	padding-bottom: 104px;
+ }
+  &__heading {
+    font: 300 30px/1 Lato, sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 32px;
+    @include breakpoint(medium) {
+      font: 300 40px/1 Lato, sans-serif;
+      white-space: pre-wrap;
+    }
+    @include breakpoint(large) {
+      font: 300 50px/1 Lato, sans-serif;
+    }
+  }
+  &__subheading {
+    font: 400 13px/1.61 Lato, sans-serif;
+    font-style: italic;
+    color: #f41353;
+    padding-bottom: 62px;
+    @include breakpoint(large) {
+		font: 400 18px/1.61 Lato, sans-serif;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    color:#fff;
+    flex-direction: column;
+    justify-content: space-between;
+	 align-items: center;
+	 padding-bottom: 30px;
+    @include breakpoint(medium) {
+		flex-direction: row;
+		padding-bottom: 36px;
+    }
+
+  }
+  &__photo {
+    border: 1px solid #fff;
+    max-width: min-content;
+  }
+  &__text{
+	  display: flex;
+	  flex-direction: column;
+	  padding-top: 30px;
+	@include breakpoint(medium) {
+		padding-top: 0;
+		padding-left: 29px;
+    }
+  }
+  &__paragraph {
+	color: #fff;
+	text-align: justify;
+    font: 300 14px/1.61 Lato, sans-serif;
+    @include breakpoint(medium) {
+		font: 300 12px/1.61 Lato, sans-serif;
+    }
+    @include breakpoint(large) {
+
+		font: 300 14px/1.61 Lato, sans-serif;
+    }
+  }
+  &__sign{
+	 padding-right: 26px;
+	 padding-top: 25px;
+  }
+  &__signature{
+	  font: 400 37px/1.7 'Jenna Sue', arial;
+	  color: #fff;
+	  text-align: right;
+	  padding-right: 70px;
+  }
+  &__name{
+	font: 400 46px/1.7 'Jenna Sue', arial;
+	color: #fff;
+	text-align: right;
+  }
 }
 .ba-ba-prijzen{
 	min-height: 100vh;
