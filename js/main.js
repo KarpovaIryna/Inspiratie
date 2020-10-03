@@ -14,15 +14,13 @@ $('.ba-slick').slick({
 	  }
 	]
  });
+ 
 $(".hamburger").click(function(e) {
 	e.preventDefault();
 	$(".ba-nav").toggleClass('is-active');
-	$(this).addClass('is-active');
+	$(this).toggleClass('is-active');
 	$(".ba-header").toggleClass('is-active');
  })
-
-
-
 
 $('a[href*="#"]')
   // Remove links that don't actually link to anything

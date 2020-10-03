@@ -10,9 +10,9 @@
 
 //foundation
 @include foundation-global-styles;
-// @include foundation-forms;
-// @include foundation-typography;
-// @include foundation-flex-grid;
+@include foundation-forms;
+@include foundation-typography;
+@include foundation-flex-grid;
 // @include foundation-menu;
 // @include foundation-menu-icon;
 // @include foundation-accordion-menu;
@@ -32,7 +32,17 @@
 // font-family: Raleway, sans-serif;
 body {
 }
-
+h1,
+h2,
+h2,
+h4,
+h5,
+h6,
+p,
+li {
+  margin: 0;
+  padding: 0;
+}
 .ba-home {
   position: relative;
   &__logo {
@@ -227,11 +237,11 @@ body {
   .ba-nav {
     margin: 0;
     position: unset;
-	 background-color: unset;
-	width: unset;
-	 overflow: unset;
-	 display: block;
-	 padding-top: 42px;
+    background-color: unset;
+    width: unset;
+    overflow: unset;
+    display: block;
+    padding-top: 42px;
     &.is-active {
       transition: all 0.5s ease 0s;
       top: 0;
@@ -240,18 +250,18 @@ body {
     &__list {
       flex-direction: row;
       list-style: none;
-		width: unset;
+      width: unset;
       margin: 0;
       padding: 0;
-		text-align: unset;
-		overflow: unset;
+      text-align: unset;
+      overflow: unset;
     }
     &__item {
-		padding: 0;
-		padding-right: 33px;
-		&:last-child{
-			padding-right: 0;
-		}
+      padding: 0;
+      padding-right: 33px;
+      &:last-child {
+        padding-right: 0;
+      }
     }
     &__link {
       font: 500 16px/2 Raleway, sans-serif;
@@ -267,15 +277,15 @@ body {
         background-color: #f41353;
         transition: 0.3s ease-in-out;
       }
-		&:hover:after,
-		&:active:after,
-		&:focus:after {
+      &:hover:after,
+      &:active:after,
+      &:focus:after {
         opacity: 1;
         transform: translateY(0);
       }
       &:active,
-		&:focus,
-		&:hover {
+      &:focus,
+      &:hover {
         color: #f41353;
       }
       @include breakpoint(medium) {
@@ -284,16 +294,104 @@ body {
     }
   }
 }
-.ba-over{
-	min-height: 100vh;
-}
-.ba-ba-prijzen{
-	min-height: 100vh;
+.ba-over {
+  background-image: url(../img/background1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  @include breakpoint(medium) {
+	padding-top: 50px;
+	padding-bottom: 50px;
+ }
+ @include breakpoint(large) {
+	padding-top: 102px;
+	padding-bottom: 104px;
+ }
+  &__heading {
+    font: 300 30px/1 Lato, sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 32px;
+    @include breakpoint(medium) {
+      font: 300 40px/1 Lato, sans-serif;
+      white-space: pre-wrap;
+    }
+    @include breakpoint(large) {
+      font: 300 50px/1 Lato, sans-serif;
+    }
+  }
+  &__subheading {
+    font: 400 13px/1.61 Lato, sans-serif;
+    font-style: italic;
+    color: #f41353;
+    padding-bottom: 62px;
+    @include breakpoint(large) {
+		font: 400 18px/1.61 Lato, sans-serif;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    color:#fff;
+    flex-direction: column;
+    justify-content: space-between;
+	 align-items: center;
+	 padding-bottom: 30px;
+    @include breakpoint(medium) {
+		flex-direction: row;
+		padding-bottom: 36px;
+    }
+
+  }
+  &__photo {
+    border: 1px solid #fff;
+    max-width: min-content;
+  }
+  &__text{
+	  display: flex;
+	  flex-direction: column;
+	  padding-top: 30px;
+	@include breakpoint(medium) {
+		padding-top: 0;
+		padding-left: 29px;
+    }
+  }
+  &__paragraph {
+	color: #fff;
+	text-align: justify;
+    font: 300 14px/1.61 Lato, sans-serif;
+    @include breakpoint(medium) {
+		font: 300 12px/1.61 Lato, sans-serif;
+    }
+    @include breakpoint(large) {
+
+		font: 300 14px/1.61 Lato, sans-serif;
+    }
+  }
+  &__sign{
+	 padding-right: 26px;
+	 padding-top: 25px;
+  }
+  &__signature{
+	  font: 400 37px/1.7 'Jenna Sue', arial;
+	  color: #fff;
+	  text-align: right;
+	  padding-right: 70px;
+  }
+  &__name{
+	font: 400 46px/1.7 'Jenna Sue', arial;
+	color: #fff;
+	text-align: right;
+  }
 }
 
-.ba-foto{
-	min-height: 100vh;
+.ba-ba-prijzen {
+  min-height: 100vh;
 }
-.ba-contact{
-	min-height: 100vh;
+
+.ba-foto {
+  min-height: 100vh;
+}
+.ba-contact {
+  min-height: 100vh;
 }
