@@ -1,0 +1,299 @@
+// @import "normalize";
+// @import "layout";
+// @import "elements";
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,100;1,300;1,400&family=Raleway:wght@500&display=swap");
+@import url(https://allfont.ru/allfont.css?fonts=jenna-sue);
+@import "slick.scss";
+@import "settings";
+@import "../node_modules/foundation-sites/scss/foundation.scss";
+@import "../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
+
+//foundation
+@include foundation-global-styles;
+// @include foundation-forms;
+// @include foundation-typography;
+// @include foundation-flex-grid;
+// @include foundation-menu;
+// @include foundation-menu-icon;
+// @include foundation-accordion-menu;
+// @include foundation-drilldown-menu;
+// @include foundation-dropdown-menu;
+
+// Layout components
+// @include foundation-off-canvas;
+// @include foundation-reveal;
+// @include foundation-sticky;
+// @include foundation-title-bar;
+// @include foundation-top-bar;
+// @include foundation-float-classes;
+@include foundation-visibility-classes;
+// font-family: 'Jenna Sue', arial;
+// font-family: Lato, sans-serif;
+// font-family: Raleway, sans-serif;
+body {
+}
+
+.ba-home {
+  position: relative;
+  &__logo {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    height: fit-content;
+    z-index: 2;
+    padding: 0 20px;
+    @include breakpoint(medium) {
+      top: 92px;
+      padding: 0;
+    }
+  }
+  &__arrow-down {
+    position: absolute;
+    bottom: 63px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    text-align: center;
+    height: fit-content;
+    @include breakpoint(medium) {
+      bottom: 163px;
+    }
+  }
+}
+.ba-slick {
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: flex-end;
+    &:after {
+      content: " ";
+      background-image: url(../img/home-pad.png);
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  &__text {
+    text-transform: uppercase;
+    text-align: center;
+    font: 400 20px/1.13 Lato, sans-serif;
+    color: $white;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.75);
+    white-space: pre-line;
+    padding-bottom: 100px;
+    @include breakpoint(medium) {
+      font: 400 30px/1.13 Lato, sans-serif;
+      padding-bottom: 230px;
+    }
+  }
+  &__nav {
+    display: none;
+    @media screen and (min-width: 640px) {
+      display: unset;
+    }
+  }
+  &__arrow {
+    position: absolute;
+    display: inline-block;
+    z-index: 1;
+    height: 22px;
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+  &__next {
+    top: 40px;
+    right: 40px;
+  }
+  &__prev {
+    top: 40px;
+    right: 69px;
+  }
+  &__slide {
+    min-height: 85.4vh;
+  }
+}
+.first {
+  background-image: url(../img/Slide1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+
+  @include breakpoint(xlarge) {
+    background-position: unset;
+  }
+}
+.second {
+  background-image: url(../img/Slide2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+
+  @include breakpoint(xlarge) {
+    background-position: unset;
+  }
+}
+.ba-header {
+  background-color: $black;
+  position: absolute;
+  top: calc(100vh - 50px);
+  width: 100%;
+  z-index: 15;
+  height: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  &.is-active {
+    position: fixed;
+    z-index: 15;
+  }
+  &__logo {
+    vertical-align: baseline;
+    width: 30%;
+    position: relative;
+    z-index: 15;
+  }
+}
+.hamburger {
+  z-index: 15;
+  outline: none;
+}
+.ba-nav {
+  position: fixed;
+  top: 100%;
+  left: 0;
+  height: 100%;
+  z-index: 5;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  &.is-active {
+    transition: all 0.5s ease 0s;
+    top: 0;
+    background: #000000;
+  }
+  @include breakpoint(medium) {
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    //  text-align: center;
+
+    @include breakpoint(medium) {
+    }
+  }
+  &__item {
+    padding: 0;
+  }
+  &__link {
+    font: 500 26px/2 Raleway, sans-serif;
+    text-decoration: none;
+    color: $white;
+    &:active,
+    &:focus,
+    &:hover {
+      color: #f41353;
+    }
+    @include breakpoint(medium) {
+      font: 500 16px/2 Raleway, sans-serif;
+    }
+  }
+}
+@include breakpoint(medium) {
+  .ba-header {
+    top: calc(100vh - 114px);
+    height: 114px;
+    &__logo {
+      width: 100%;
+    }
+  }
+  .ba-nav {
+    margin: 0;
+    position: unset;
+	 background-color: unset;
+	width: unset;
+	 overflow: unset;
+	 display: block;
+	 padding-top: 42px;
+    &.is-active {
+      transition: all 0.5s ease 0s;
+      top: 0;
+      background: #000000;
+    }
+    &__list {
+      flex-direction: row;
+      list-style: none;
+		width: unset;
+      margin: 0;
+      padding: 0;
+		text-align: unset;
+		overflow: unset;
+    }
+    &__item {
+		padding: 0;
+		padding-right: 33px;
+		&:last-child{
+			padding-right: 0;
+		}
+    }
+    &__link {
+      font: 500 16px/2 Raleway, sans-serif;
+      text-decoration: none;
+      color: $white;
+      &:after {
+        display: block;
+        content: "";
+        height: 4px;
+        opacity: 0;
+        margin-top: 10px;
+        transform: translateY(-100%);
+        background-color: #f41353;
+        transition: 0.3s ease-in-out;
+      }
+		&:hover:after,
+		&:active:after,
+		&:focus:after {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      &:active,
+		&:focus,
+		&:hover {
+        color: #f41353;
+      }
+      @include breakpoint(medium) {
+        font: 500 16px/2 Raleway, sans-serif;
+      }
+    }
+  }
+}
+.ba-over{
+	min-height: 100vh;
+}
+.ba-ba-prijzen{
+	min-height: 100vh;
+}
+
+.ba-foto{
+	min-height: 100vh;
+}
+.ba-contact{
+	min-height: 100vh;
+}
