@@ -1,36 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,100;1,300;1,400&family=Raleway:wght@500&display=swap");
 @font-face {
-	font-family:"Jenna Sue";
-	src:url("../fonts/JennaSue.eot") format("eot"),
-	url("../fonts/JennaSue.woff") format("woff"),
-	url("../fonts/JennaSue.ttf") format("truetype"),
-	url("../fonts/JennaSue.svg#JennaSue") format("svg");
-	font-weight:normal;
-	font-style:normal;}
+  font-family: "Jenna Sue";
+  src: url("../fonts/JennaSue.eot") format("eot"),
+    url("../fonts/JennaSue.woff") format("woff"),
+    url("../fonts/JennaSue.ttf") format("truetype"),
+    url("../fonts/JennaSue.svg#JennaSue") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 @import "slick.scss";
 @import "settings";
 @import "../node_modules/foundation-sites/scss/foundation.scss";
 @import "../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
 
-//foundation
-@include foundation-global-styles;
-@include foundation-forms;
-@include foundation-typography;
-@include foundation-flex-grid;
-// @include foundation-menu;
-// @include foundation-menu-icon;
-// @include foundation-accordion-menu;
-// @include foundation-drilldown-menu;
-// @include foundation-dropdown-menu;
-
-// Layout components
-// @include foundation-off-canvas;
-// @include foundation-reveal;
-// @include foundation-sticky;
-// @include foundation-title-bar;
-// @include foundation-top-bar;
-// @include foundation-float-classes;
-@include foundation-visibility-classes;
+@include foundation-everything;
 // font-family: 'Jenna Sue', arial;
 // font-family: Lato, sans-serif;
 // font-family: Raleway, sans-serif;
@@ -38,12 +21,13 @@ body {
 }
 h1,
 h2,
-h2,
+h3,
 h4,
 h5,
 h6,
 p,
-li {
+li,
+span {
   margin: 0;
   padding: 0;
 }
@@ -305,13 +289,13 @@ li {
   padding-top: 50px;
   padding-bottom: 50px;
   @include breakpoint(medium) {
-	padding-top: 50px;
-	padding-bottom: 50px;
- }
- @include breakpoint(large) {
-	padding-top: 102px;
-	padding-bottom: 104px;
- }
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  @include breakpoint(large) {
+    padding-top: 102px;
+    padding-bottom: 104px;
+  }
   &__heading {
     font: 300 30px/1 Lato, sans-serif;
     color: #fff;
@@ -331,65 +315,223 @@ li {
     color: #f41353;
     padding-bottom: 62px;
     @include breakpoint(large) {
-		font: 400 18px/1.61 Lato, sans-serif;
+      font: 400 18px/1.61 Lato, sans-serif;
     }
   }
   &__wrapper {
     display: flex;
-    color:#fff;
+    color: #fff;
     flex-direction: column;
     justify-content: space-between;
-	 align-items: center;
-	 padding-bottom: 30px;
+    align-items: center;
+    padding-bottom: 30px;
     @include breakpoint(medium) {
-		flex-direction: row;
-		padding-bottom: 36px;
+      flex-direction: row;
+      padding-bottom: 36px;
     }
-
   }
   &__photo {
     border: 1px solid #fff;
     max-width: min-content;
   }
-  &__text{
-	  display: flex;
-	  flex-direction: column;
-	  padding-top: 30px;
-	@include breakpoint(medium) {
-		padding-top: 0;
-		padding-left: 29px;
+  &__text {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    @include breakpoint(medium) {
+      padding-top: 0;
+      padding-left: 29px;
     }
   }
   &__paragraph {
-	color: #fff;
-	text-align: justify;
+    color: #fff;
+    text-align: justify;
     font: 300 14px/1.61 Lato, sans-serif;
     @include breakpoint(medium) {
-		font: 300 12px/1.61 Lato, sans-serif;
+      font: 300 12px/1.61 Lato, sans-serif;
     }
     @include breakpoint(large) {
-
-		font: 300 14px/1.61 Lato, sans-serif;
+      font: 300 14px/1.61 Lato, sans-serif;
     }
   }
-  &__sign{
-	 padding-right: 26px;
-	 padding-top: 25px;
+  &__sign {
+    padding-right: 26px;
+    padding-top: 25px;
   }
-  &__signature{
-	  font: 400 37px/1.7 'Jenna Sue', arial;
-	  color: #fff;
-	  text-align: right;
-	  padding-right: 70px;
+  &__signature {
+    font: 400 37px/1.7 "Jenna Sue", sans-serif;
+    color: #fff;
+    text-align: right;
+    padding-right: 70px;
   }
-  &__name{
-	font: 400 46px/1.7 'Jenna Sue', arial;
-	color: #fff;
-	text-align: right;
+  &__name {
+    font: 400 46px/1.7 "Jenna Sue", sans-serif;
+    color: #fff;
+    text-align: right;
   }
 }
-.ba-ba-prijzen {
-  min-height: 100vh;
+.ba-invitation {
+  background: url(../img/overlay.png), url(../img/bg1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    @include breakpoint(medium) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    @include breakpoint(large) {
+      padding-top: 108px;
+      padding-bottom: 72px;
+    }
+  }
+  &__first-question {
+    text-transform: uppercase;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.75);
+    font: 300 25px/1.574 Lato, sans-serif;
+    text-align: center;
+    @include breakpoint(medium) {
+      font: 300 50px/1.574 Lato, sans-serif;
+    }
+  }
+  &__second-question {
+    text-transform: uppercase;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.75);
+    font: 300 26px/1.23 Lato, sans-serif;
+    padding-bottom: 33px;
+    text-align: center;
+    @include breakpoint(medium) {
+      font: 300 60px/1.23 Lato, sans-serif;
+    }
+  }
+  &__contact {
+    font: 400 16.5px/0.877 Lato, sans-serif;
+    display: inline-block;
+    background-color: #f41353;
+    padding: 15px 42px;
+    position: relative;
+    &:after {
+      content: " ";
+      height: 32px;
+      width: 32px;
+      position: absolute;
+      background-color: #f41353;
+      top: 6px;
+      left: 92%;
+      transform: rotate(45deg);
+    }
+    &:hover {
+      transform: skew(-10deg);
+    }
+  }
+}
+.ba-prijzen {
+  background: url(../img/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 108px;
+  &__title {
+    text-transform: uppercase;
+    font: 300 40px/1 Lato, sans-serif;
+    padding-top: 85px;
+	 padding-bottom: 22px;
+	 @include breakpoint(large){
+		font: 300 50.31px/1 Lato, sans-serif;
+	 }
+  }
+  &__owner {
+    color: #f41353;
+    font: 400 12px/1.61 Lato, sans-serif;
+    font-style: italic;
+	 padding-bottom: 22px;
+	 @include breakpoint(large){
+		font: 400 18px/1.61 Lato, sans-serif;
+	 }
+  }
+  &__infornation {
+    font: 400 12px/1.71 Lato, sans-serif;
+    padding-bottom: 47px;
+	 white-space: pre-wrap;
+	 @include breakpoint(medium){
+		 
+	}
+	 @include breakpoint(large){
+		font: 400 14px/1.71 Lato, sans-serif;
+	 }
+  }
+  &__heading {
+    text-transform: uppercase;
+    font: 300 16px/2.29 Lato, sans-serif;
+    border-bottom: 1px solid #fff;
+	 display: inline-block;
+	 @include breakpoint(medium){
+		 
+	}
+	 @include breakpoint(large){
+		font: 300 22px/2.29 Lato, sans-serif;
+	 }
+  }
+  &__bottom-text{
+	  max-width: 758px;
+	  margin: 0 auto;
+  }
+  &__description{
+	  white-space: pre-line;
+	  word-wrap:break-word;
+	  font: 400 14px/2 Lato, sans-serif;
+  }
+}
+.large-offset-2 {
+  @include breakpoint(large) {
+    margin-left: 47px;
+  }
+}
+.ba-price {
+  padding-right: 0;
+  padding-left: 0;
+  font: 400 14px/2 Lato, sans-serif;
+  padding-top: 20px;
+  padding-bottom: 60px;
+
+  @include breakpoint(medium) {
+    padding-right: 60px;
+    padding-left: 45px;
+  }
+  &__centimeters {
+    justify-content: flex-end;
+    align-items: center;
+    color: #f41353;
+	 font: 700 14px/2 Lato, sans-serif;
+	 padding-bottom: 25px;
+    @include breakpoint(large) {
+		max-width: 48px;
+		padding-bottom: 0;
+    }
+  }
+  &__col {
+	 max-width: 113px;
+	 padding-bottom: 25px;
+      @include breakpoint(medium){
+
+		}
+		@include breakpoint(large){
+			padding-bottom: 0;
+      }
+  }
+  &__heading {
+    display: inline-block;
+    padding: 14px 0;
+    background-color: #f41353;
+  }
 }
 .ba-foto {
   min-height: 100vh;
