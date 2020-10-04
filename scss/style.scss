@@ -530,7 +530,19 @@ span {
   &__heading {
     display: inline-block;
     padding: 14px 0;
-    background-color: #f41353;
+	 background-color: #f41353;
+	 position: relative;
+	 margin-bottom: 17px;
+	 &:after{
+			content: " ";
+			height: 8px;
+			width: 8px;
+			position: absolute;
+			background-color: #f41353;
+			bottom: -4px;
+			left: 50%;
+			transform: rotate(45deg);
+	 }
   }
 }
 .ba-foto {
