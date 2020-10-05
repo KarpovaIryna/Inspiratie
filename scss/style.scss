@@ -545,9 +545,52 @@ span {
 	 }
   }
 }
+.ba-gallery{
+	&__photo{
+		max-width: 100%;
+		@include breakpoint(medium){
+			max-width: 50%;
+		}
+		@include breakpoint(large){
+			max-width: 20%;
+		}
+	}
+}
+.ba-row{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	@include breakpoint(medium){
+		flex-direction: row;
+	}
+}
 .ba-foto {
-  min-height: 100vh;
+  background-color: #f41353;
+  &__heading{
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  height: 150px;
+	@include breakpoint(large){
+		height: 250px;
+	}
+  }
+  &__title{
+	  text-transform: uppercase;
+	  font: 300 50px/1 Lato, sans-serif;
+	  color: #fff;
+  }
 }
 .ba-contact {
   min-height: 100vh;
+  background-image: url(../img/bg-contacts.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+#map {
+	width: 470px;
+	height: 352px;
+	background-color: grey;
+ }

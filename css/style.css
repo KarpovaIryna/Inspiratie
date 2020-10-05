@@ -6001,10 +6001,49 @@ span {
       left: 50%;
       transform: rotate(45deg); }
 
+.ba-gallery__photo {
+  max-width: 100%; }
+  @media print, screen and (min-width: 40em) {
+    .ba-gallery__photo {
+      max-width: 50%; } }
+  @media print, screen and (min-width: 64em) {
+    .ba-gallery__photo {
+      max-width: 20%; } }
+
+.ba-row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; }
+  @media print, screen and (min-width: 40em) {
+    .ba-row {
+      flex-direction: row; } }
+
 .ba-foto {
-  min-height: 100vh; }
+  background-color: #f41353; }
+  .ba-foto__heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px; }
+    @media print, screen and (min-width: 64em) {
+      .ba-foto__heading {
+        height: 250px; } }
+  .ba-foto__title {
+    text-transform: uppercase;
+    font: 300 50px/1 Lato, sans-serif;
+    color: #fff; }
 
 .ba-contact {
-  min-height: 100vh; }
+  min-height: 100vh;
+  background-image: url(../img/bg-contacts.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+#map {
+  width: 470px;
+  height: 352px;
+  background-color: grey; }
 
 /*# sourceMappingURL=style.css.map */
