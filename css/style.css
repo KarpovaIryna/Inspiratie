@@ -6037,10 +6037,90 @@ span {
   background-image: url(../img/bg-contacts.png);
   background-repeat: no-repeat;
   background-size: cover; }
+  .ba-contact__title {
+    font: 300 50px/1 Lato, sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    padding-top: 90px;
+    padding-bottom: 20px; }
+  .ba-contact__description {
+    font: 400 16px/1.5 Lato, sans-serif;
+    white-space: pre-line;
+    color: #f41353;
+    padding-bottom: 55px; }
+  .ba-contact__wrapper {
+    display: flex;
+    flex-direction: column; }
+    @media print, screen and (min-width: 40em) {
+      .ba-contact__wrapper {
+        flex-direction: row; } }
+  .ba-contact__conection {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px; }
+    @media print, screen and (min-width: 40em) {
+      .ba-contact__conection {
+        width: 50%;
+        padding-left: 10px;
+        padding-right: 90px; } }
+  .ba-contact__location {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; }
+    @media print, screen and (min-width: 40em) {
+      .ba-contact__location {
+        width: 50%; } }
+  .ba-contact__map {
+    width: 100%;
+    height: 200px;
+    background-color: grey; }
+    @media print, screen and (min-width: 40em) {
+      .ba-contact__map {
+        width: 85%;
+        height: 250px; } }
+    @media print, screen and (min-width: 64em) {
+      .ba-contact__map {
+        width: 470px;
+        height: 352px; } }
 
-#map {
-  width: 470px;
-  height: 352px;
-  background-color: grey; }
+.ba-form {
+  text-align: right; }
+  .ba-form__field {
+    border: 1px solid #fff;
+    background: rgba(255, 255, 255, 0.5);
+    margin-bottom: 4px;
+    height: 26px; }
+    .ba-form__field::placeholder {
+      color: #fff;
+      font: italic 400 14px/1.4 Lato, sans-serif; }
+  .ba-form__comment {
+    border: 1px solid #fff;
+    background: rgba(255, 255, 255, 0.5);
+    height: 112px;
+    margin-bottom: 5px; }
+    .ba-form__comment::placeholder {
+      color: #fff;
+      font: italic 400 14px/1 Lato, sans-serif;
+      vertical-align: baseline; }
+  .ba-form__button {
+    padding: 5px 18px;
+    background-color: #f41353;
+    display: inline-block;
+    position: relative;
+    font: 700 14px/1.57 Lato, sans-serif;
+    margin-right: 12px;
+    color: #fff; }
+    .ba-form__button:before {
+      content: " ";
+      clip-path: polygon(50% 0%, 72% 50%, 50% 100%, 36% 50%);
+      height: 100%;
+      width: 50px;
+      position: absolute;
+      background-color: #f41353;
+      bottom: 0;
+      left: 76%; }
+    .ba-form__button:hover {
+      transform: skew(-10deg); }
 
 /*# sourceMappingURL=style.css.map */

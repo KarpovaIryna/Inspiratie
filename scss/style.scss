@@ -52,7 +52,7 @@ span {
     position: absolute;
     bottom: 72px;
     left: 10px;
-	 right: 0;
+    right: 0;
     z-index: 2;
     text-align: center;
     height: fit-content;
@@ -99,7 +99,7 @@ span {
   &__arrow {
     position: absolute;
     display: inline-block;
-	 z-index: 1;
+    z-index: 1;
     height: 22px;
     outline: none;
     border: none;
@@ -200,8 +200,8 @@ span {
   }
   &__link {
     font: 500 26px/2 Raleway, sans-serif;
-	 text-decoration: none;
-	 text-transform: uppercase;
+    text-decoration: none;
+    text-transform: uppercase;
     color: $white;
     &:active,
     &:focus,
@@ -216,11 +216,11 @@ span {
 @include breakpoint(medium) {
   .ba-header {
     top: calc(100vh - 114px);
-	 height: 114px;
-	 padding-left: 60px;
-	 padding-right: 40px;
+    height: 114px;
+    padding-left: 60px;
+    padding-right: 40px;
     &__logo {
-		 padding-top: 21px;
+      padding-top: 21px;
       width: 100%;
     }
   }
@@ -312,8 +312,8 @@ span {
     }
   }
   &__subheading {
-	 font:400 13px/1.61 Lato, sans-serif;
-	 font-style: italic;
+    font: 400 13px/1.61 Lato, sans-serif;
+    font-style: italic;
     color: #f41353;
     padding-bottom: 57px;
     @include breakpoint(large) {
@@ -444,40 +444,40 @@ span {
     text-transform: uppercase;
     font: 300 40px/1 Lato, sans-serif;
     padding-top: 75px;
-	 padding-bottom: 10px;
-	 @include breakpoint(large){
-		font: 300 50.31px/1 Lato, sans-serif;
-	 }
+    padding-bottom: 10px;
+    @include breakpoint(large) {
+      font: 300 50.31px/1 Lato, sans-serif;
+    }
   }
   &__owner {
     color: #f41353;
     font: 400 12px/1.61 Lato, sans-serif;
-	 padding-bottom: 13px;
-	 @include breakpoint(large){
-		font: 400 18px/1.61 Lato, sans-serif;
-	 }
+    padding-bottom: 13px;
+    @include breakpoint(large) {
+      font: 400 18px/1.61 Lato, sans-serif;
+    }
   }
   &__infornation {
     font: 400 12px/1.71 Lato, sans-serif;
     padding-bottom: 40px;
-	 white-space: pre-line;
-	 @include breakpoint(large){
-		font: 400 14px/1.71 Lato, sans-serif;
-	 }
+    white-space: pre-line;
+    @include breakpoint(large) {
+      font: 400 14px/1.71 Lato, sans-serif;
+    }
   }
   &__heading {
     text-transform: uppercase;
     font: 300 16px/2.2 Lato, sans-serif;
     border-bottom: 1px solid #fff;
-	 display: inline-block;
-	 @include breakpoint(large){
-		font: 300 22px/2 Lato, sans-serif;
-	 }
+    display: inline-block;
+    @include breakpoint(large) {
+      font: 300 22px/2 Lato, sans-serif;
+    }
   }
-  &__description{
-	  white-space: pre-line;
-	  word-wrap:break-word;
-	  font: 400 14px/1.77 Lato, sans-serif;
+  &__description {
+    white-space: pre-line;
+    word-wrap: break-word;
+    font: 400 14px/1.77 Lato, sans-serif;
   }
 }
 .large-offset-2 {
@@ -499,75 +499,74 @@ span {
     justify-content: flex-end;
     align-items: center;
     color: #f41353;
-	 font: 700 14px/2 Lato, sans-serif;
-	 padding-bottom: 25px;
+    font: 700 14px/2 Lato, sans-serif;
+    padding-bottom: 25px;
     @include breakpoint(large) {
-		max-width: 48px;
-		padding-bottom: 0;
+      max-width: 48px;
+      padding-bottom: 0;
     }
   }
   &__col {
-	 max-width: 113px;
-	 padding-bottom: 25px;
-      @include breakpoint(medium){
-
-		}
-		@include breakpoint(large){
-			padding-bottom: 0;
-      }
+    max-width: 113px;
+    padding-bottom: 25px;
+    @include breakpoint(medium) {
+    }
+    @include breakpoint(large) {
+      padding-bottom: 0;
+    }
   }
   &__heading {
     display: inline-block;
     padding: 4px 0;
-	 background-color: #f41353;
-	 position: relative;
-	 margin-bottom: 17px;
-	 &:after{
-			content: " ";
-			height: 8px;
-			width: 8px;
-			position: absolute;
-			background-color: #f41353;
-			bottom: -4px;
-			left: 50%;
-			transform: rotate(45deg);
-	 }
+    background-color: #f41353;
+    position: relative;
+    margin-bottom: 17px;
+    &:after {
+      content: " ";
+      height: 8px;
+      width: 8px;
+      position: absolute;
+      background-color: #f41353;
+      bottom: -4px;
+      left: 50%;
+      transform: rotate(45deg);
+    }
   }
 }
-.ba-gallery{
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: center;
-	@include breakpoint(medium){
-		flex-direction: row;
-	}
-	&__photo{
-		max-width: 100%;
-		@include breakpoint(medium){
-			max-width: 50%;
-		}
-		@include breakpoint(large){
-			width: 20%;
-		}
-	}
+.ba-gallery {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  @include breakpoint(medium) {
+    flex-direction: row;
+  }
+  &__photo {
+    max-width: 100%;
+    @include breakpoint(medium) {
+      max-width: 50%;
+    }
+    @include breakpoint(large) {
+      width: 20%;
+    }
+  }
 }
 .ba-foto {
   background-color: #f41353;
-  &__heading{
-	  display: flex;
-	  align-items: center;
-	  justify-content: center;
-	  height: 150px;
-	@include breakpoint(large){
-		height: 247px;
-	}
+  &__heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    @include breakpoint(large) {
+      height: 247px;
+    }
   }
-  &__title{
-	  text-transform: uppercase;
-	  font: 300 50px/1 Lato, sans-serif;
-	  color: #fff;
+  &__title {
+    text-transform: uppercase;
+    font: 300 50px/1 Lato, sans-serif;
+    color: #fff;
   }
 }
 .ba-contact {
@@ -575,9 +574,103 @@ span {
   background-image: url(../img/bg-contacts.png);
   background-repeat: no-repeat;
   background-size: cover;
+  &__title {
+    font: 300 50px/1 Lato, sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    padding-top: 90px;
+    padding-bottom: 20px;
+  }
+  &__description {
+    font: 400 16px/1.5 Lato, sans-serif;
+    white-space: pre-line;
+    color: #f41353;
+    padding-bottom: 55px;
+  }
+  &__wrapper {
+	 display: flex;
+	 flex-direction: column;
+	 @include breakpoint(medium) {
+		flex-direction: row;
+	 }
+  }
+  &__conection {
+    width: 100%;
+    padding-left: 10px;
+	 padding-right: 10px;
+	 @include breakpoint(medium) {
+		width: 50%;
+		padding-left: 10px;
+		padding-right: 90px;
+	 }
+	 
+  }
+  &__location {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+	 align-items: flex-end;
+	 @include breakpoint(medium) {
+		width: 50%;
+	 }
+  }
+  &__map {
+	width: 100%;
+	height: 200px;
+	 background-color: grey;
+	 @include breakpoint(medium) {
+		width: 85%;
+		height: 250px;
+	 }
+	 @include breakpoint(large) {
+		width: 470px;
+		height: 352px;
+	 }
+  }
 }
-#map {
-	width: 470px;
-	height: 352px;
-	background-color: grey;
- }
+.ba-form {
+  text-align: right;
+  &__field {
+    border: 1px solid #fff;
+    background: rgba(255, 255, 255, 0.5);
+    margin-bottom: 4px;
+    height: 26px;
+    &::placeholder {
+      color: #fff;
+      font: italic 400 14px/1.4 Lato, sans-serif;
+    }
+  }
+  &__comment {
+    border: 1px solid #fff;
+    background: rgba(255, 255, 255, 0.5);
+    height: 112px;
+    margin-bottom: 5px;
+    &::placeholder {
+      color: #fff;
+      font: italic 400 14px/1 Lato, sans-serif;
+      vertical-align: baseline;
+    }
+  }
+  &__button {
+    padding: 5px 18px;
+    background-color: #f41353;
+    display: inline-block;
+    position: relative;
+	 font: 700 14px/1.57 Lato, sans-serif;
+	 margin-right: 12px;
+	 color: #fff;
+    &:before {
+      content: " ";
+		clip-path: polygon(50% 0%, 72% 50%, 50% 100%, 36% 50%);
+      height: 100%;
+      width: 50px;
+      position: absolute;
+      background-color: #f41353;
+      bottom: 0;
+		left: 76%;
+	 }
+	 &:hover {
+      transform: skew(-10deg);
+    }
+  }
+}

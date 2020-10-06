@@ -251,15 +251,21 @@ blijft niet stilstaan..</h1>
 				<p class="ba-contact__description">Had u graag een afspraak gewenst of graag wat meer info gewenst?
 Contacteer ons snel via onderstaande contactgegevens, wij helpen u graag verder</p>
 					<div class="ba-contact__wrapper">
-						<form action="#" class="ba-form">
-<input type="text" name="" id="" class="ba-contact__name">
-<input type="tel" name="" id="" class="ba-contact__tel">
-<input type="text" name="" id="" class="ba-contact__adress">
-<input type="text" name="" id="" class="ba-contact__postcode">
-<input type="email" name="" id="" class="ba-contact__email">
-<input type="text" name="" id="" class="ba-contact__comment">
+						<div class="ba-contact__conection">
+						<form action="get" class="ba-form">
+<input type="text" name="" id="" class="ba-form__field" placeholder="Naam">
+<input type="tel" name="" id="" class="ba-form__field" placeholder="Telefoon">
+<input type="text" name="" id="" class="ba-form__field" placeholder="Adres">
+<input type="text" name="" id="" class="ba-form__field" placeholder="Postcode & gemeente">
+<input type="email" name="" id="" class="ba-form__field" placeholder="Email">
+<textarea class="ba-form__comment" rows="4" name="text" placeholder="Uw boodschap"></textarea>
+<button type="submit" class="ba-form__button">Verzenden</button>
 						</form>
-						<div id="map"></div>
+
+					</div>
+						<div class="ba-contact__location">
+						<div class="ba-contact__map" id="map"></div>
+					</div>
 					</div>
 			</div>
 		</section>
