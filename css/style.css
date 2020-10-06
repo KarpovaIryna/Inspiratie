@@ -1363,7 +1363,7 @@ a {
 
 hr {
   clear: both;
-  max-width: 62.375rem;
+  max-width: 64.25rem;
   height: 0;
   margin: 1.25rem auto;
   border-top: 0;
@@ -1568,7 +1568,7 @@ ul.no-bullet, ol.no-bullet {
 .grid-container {
   padding-right: 0.625rem;
   padding-left: 0.625rem;
-  max-width: 62.375rem;
+  max-width: 64.25rem;
   margin-left: auto;
   margin-right: auto; }
   @media print, screen and (min-width: 40em) {
@@ -5136,21 +5136,21 @@ html.is-reveal-open {
   @media print, screen and (min-width: 40em) {
     .reveal {
       width: 600px;
-      max-width: 62.375rem; } }
+      max-width: 64.25rem; } }
   .reveal.collapse {
     padding: 0; }
   @media print, screen and (min-width: 40em) {
     .reveal.tiny {
       width: 30%;
-      max-width: 62.375rem; } }
+      max-width: 64.25rem; } }
   @media print, screen and (min-width: 40em) {
     .reveal.small {
       width: 50%;
-      max-width: 62.375rem; } }
+      max-width: 64.25rem; } }
   @media print, screen and (min-width: 40em) {
     .reveal.large {
       width: 90%;
-      max-width: 62.375rem; } }
+      max-width: 64.25rem; } }
   .reveal.full {
     top: 0;
     right: 0;
@@ -5578,15 +5578,15 @@ span {
         padding: 0; } }
   .ba-home__arrow-down {
     position: absolute;
-    bottom: 63px;
-    left: 0;
+    bottom: 72px;
+    left: 10px;
     right: 0;
     z-index: 2;
     text-align: center;
     height: fit-content; }
     @media print, screen and (min-width: 40em) {
       .ba-home__arrow-down {
-        bottom: 163px; } }
+        bottom: 158px; } }
 
 .ba-slick__wrapper {
   display: flex;
@@ -5609,11 +5609,11 @@ span {
   color: #ffff;
   text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.75);
   white-space: pre-line;
-  padding-bottom: 100px; }
+  padding-bottom: 147px; }
   @media print, screen and (min-width: 40em) {
     .ba-slick__text {
       font: 400 30px/1.13 Lato, sans-serif;
-      padding-bottom: 230px; } }
+      padding-bottom: 258px; } }
 
 .ba-slick__nav {
   display: none; }
@@ -5632,12 +5632,12 @@ span {
   cursor: pointer; }
 
 .ba-slick__next {
-  top: 40px;
-  right: 40px; }
+  top: 39px;
+  right: 37px; }
 
 .ba-slick__prev {
-  top: 40px;
-  right: 69px; }
+  top: 39px;
+  right: 64px; }
 
 .ba-slick__slide {
   min-height: 85.4vh; }
@@ -5714,6 +5714,7 @@ span {
   .ba-nav__link {
     font: 500 26px/2 Raleway, sans-serif;
     text-decoration: none;
+    text-transform: uppercase;
     color: #ffff; }
     .ba-nav__link:active, .ba-nav__link:focus, .ba-nav__link:hover {
       color: #f41353; }
@@ -5724,8 +5725,11 @@ span {
 @media print, screen and (min-width: 40em) {
   .ba-header {
     top: calc(100vh - 114px);
-    height: 114px; }
+    height: 114px;
+    padding-left: 60px;
+    padding-right: 40px; }
     .ba-header__logo {
+      padding-top: 21px;
       width: 100%; }
   .ba-nav {
     margin: 0;
@@ -5786,13 +5790,13 @@ span {
       padding-bottom: 50px; } }
   @media print, screen and (min-width: 64em) {
     .ba-over {
-      padding-top: 102px;
-      padding-bottom: 104px; } }
+      padding-top: 95px;
+      padding-bottom: 95px; } }
   .ba-over__heading {
     font: 300 30px/1 Lato, sans-serif;
     color: #fff;
     text-transform: uppercase;
-    padding-bottom: 32px; }
+    padding-bottom: 25px; }
     @media print, screen and (min-width: 40em) {
       .ba-over__heading {
         font: 300 40px/1 Lato, sans-serif;
@@ -5804,7 +5808,7 @@ span {
     font: 400 13px/1.61 Lato, sans-serif;
     font-style: italic;
     color: #f41353;
-    padding-bottom: 62px; }
+    padding-bottom: 57px; }
     @media print, screen and (min-width: 64em) {
       .ba-over__subheading {
         font: 400 18px/1.61 Lato, sans-serif; } }
@@ -5813,12 +5817,11 @@ span {
     color: #fff;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     padding-bottom: 30px; }
     @media print, screen and (min-width: 40em) {
       .ba-over__wrapper {
         flex-direction: row;
-        padding-bottom: 36px; } }
+        padding-bottom: 30px; } }
   .ba-over__photo {
     border: 1px solid #fff;
     max-width: min-content; }
@@ -5828,8 +5831,8 @@ span {
     padding-top: 30px; }
     @media print, screen and (min-width: 40em) {
       .ba-over__text {
-        padding-top: 0;
-        padding-left: 29px; } }
+        padding-top: 5px;
+        padding-left: 35px; } }
   .ba-over__paragraph {
     color: #fff;
     text-align: justify;
@@ -5841,15 +5844,15 @@ span {
       .ba-over__paragraph {
         font: 300 14px/1.61 Lato, sans-serif; } }
   .ba-over__sign {
-    padding-right: 26px;
-    padding-top: 25px; }
+    padding-right: 30px;
+    padding-top: 14px; }
   .ba-over__signature {
     font: 400 37px/1.7 "Jenna Sue", sans-serif;
     color: #fff;
     text-align: right;
     padding-right: 70px; }
   .ba-over__name {
-    font: 400 46px/1.7 "Jenna Sue", sans-serif;
+    font: 400 46px/1.3 "Jenna Sue", sans-serif;
     color: #fff;
     text-align: right; }
 
@@ -5872,38 +5875,38 @@ span {
         padding-bottom: 60px; } }
     @media print, screen and (min-width: 64em) {
       .ba-invitation__wrapper {
-        padding-top: 108px;
-        padding-bottom: 72px; } }
+        padding-top: 100px;
+        padding-bottom: 68px; } }
   .ba-invitation__first-question {
     text-transform: uppercase;
     text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.75);
-    font: 300 25px/1.574 Lato, sans-serif;
+    font: 300 25px/1.5 Lato, sans-serif;
     text-align: center; }
     @media print, screen and (min-width: 40em) {
       .ba-invitation__first-question {
-        font: 300 50px/1.574 Lato, sans-serif; } }
+        font: 300 50px/1.5 Lato, sans-serif; } }
   .ba-invitation__second-question {
     text-transform: uppercase;
     text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.75);
-    font: 300 26px/1.23 Lato, sans-serif;
-    padding-bottom: 33px;
+    font: 300 26px/1.2 Lato, sans-serif;
+    padding-bottom: 20px;
     text-align: center; }
     @media print, screen and (min-width: 40em) {
       .ba-invitation__second-question {
-        font: 300 60px/1.23 Lato, sans-serif; } }
+        font: 300 60px/1.2 Lato, sans-serif; } }
   .ba-invitation__contact {
     font: 400 16.5px/0.877 Lato, sans-serif;
     display: inline-block;
     background-color: #f41353;
-    padding: 15px 42px;
+    padding: 15px 35px;
     position: relative; }
     .ba-invitation__contact:after {
       content: " ";
-      height: 32px;
-      width: 32px;
+      height: 30px;
+      width: 30px;
       position: absolute;
       background-color: #f41353;
-      top: 6px;
+      top: 7px;
       left: 92%;
       transform: rotate(45deg); }
     .ba-invitation__contact:hover {
@@ -5915,45 +5918,41 @@ span {
   background-size: cover;
   text-align: center;
   color: #fff;
-  padding-bottom: 108px; }
+  padding-bottom: 100px; }
   .ba-prijzen__title {
     text-transform: uppercase;
     font: 300 40px/1 Lato, sans-serif;
-    padding-top: 85px;
-    padding-bottom: 22px; }
+    padding-top: 75px;
+    padding-bottom: 10px; }
     @media print, screen and (min-width: 64em) {
       .ba-prijzen__title {
         font: 300 50.31px/1 Lato, sans-serif; } }
   .ba-prijzen__owner {
     color: #f41353;
     font: 400 12px/1.61 Lato, sans-serif;
-    font-style: italic;
-    padding-bottom: 22px; }
+    padding-bottom: 13px; }
     @media print, screen and (min-width: 64em) {
       .ba-prijzen__owner {
         font: 400 18px/1.61 Lato, sans-serif; } }
   .ba-prijzen__infornation {
     font: 400 12px/1.71 Lato, sans-serif;
-    padding-bottom: 47px;
-    white-space: pre-wrap; }
+    padding-bottom: 40px;
+    white-space: pre-line; }
     @media print, screen and (min-width: 64em) {
       .ba-prijzen__infornation {
         font: 400 14px/1.71 Lato, sans-serif; } }
   .ba-prijzen__heading {
     text-transform: uppercase;
-    font: 300 16px/2.29 Lato, sans-serif;
+    font: 300 16px/2.2 Lato, sans-serif;
     border-bottom: 1px solid #fff;
     display: inline-block; }
     @media print, screen and (min-width: 64em) {
       .ba-prijzen__heading {
-        font: 300 22px/2.29 Lato, sans-serif; } }
-  .ba-prijzen__bottom-text {
-    max-width: 758px;
-    margin: 0 auto; }
+        font: 300 22px/2 Lato, sans-serif; } }
   .ba-prijzen__description {
     white-space: pre-line;
     word-wrap: break-word;
-    font: 400 14px/2 Lato, sans-serif; }
+    font: 400 14px/1.77 Lato, sans-serif; }
 
 @media print, screen and (min-width: 64em) {
   .large-offset-2 {
@@ -5964,11 +5963,10 @@ span {
   padding-left: 0;
   font: 400 14px/2 Lato, sans-serif;
   padding-top: 20px;
-  padding-bottom: 60px; }
+  padding-bottom: 50px; }
   @media print, screen and (min-width: 40em) {
     .ba-price {
-      padding-right: 60px;
-      padding-left: 45px; } }
+      padding-left: 87px; } }
   .ba-price__centimeters {
     justify-content: flex-end;
     align-items: center;
@@ -5987,7 +5985,7 @@ span {
         padding-bottom: 0; } }
   .ba-price__heading {
     display: inline-block;
-    padding: 14px 0;
+    padding: 4px 0;
     background-color: #f41353;
     position: relative;
     margin-bottom: 17px; }
@@ -6001,24 +5999,23 @@ span {
       left: 50%;
       transform: rotate(45deg); }
 
-.ba-gallery__photo {
-  max-width: 100%; }
-  @media print, screen and (min-width: 40em) {
-    .ba-gallery__photo {
-      max-width: 50%; } }
-  @media print, screen and (min-width: 64em) {
-    .ba-gallery__photo {
-      max-width: 20%; } }
-
-.ba-row {
+.ba-gallery {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center; }
   @media print, screen and (min-width: 40em) {
-    .ba-row {
+    .ba-gallery {
       flex-direction: row; } }
+  .ba-gallery__photo {
+    max-width: 100%; }
+    @media print, screen and (min-width: 40em) {
+      .ba-gallery__photo {
+        max-width: 50%; } }
+    @media print, screen and (min-width: 64em) {
+      .ba-gallery__photo {
+        width: 20%; } }
 
 .ba-foto {
   background-color: #f41353; }
@@ -6029,7 +6026,7 @@ span {
     height: 150px; }
     @media print, screen and (min-width: 64em) {
       .ba-foto__heading {
-        height: 250px; } }
+        height: 247px; } }
   .ba-foto__title {
     text-transform: uppercase;
     font: 300 50px/1 Lato, sans-serif;

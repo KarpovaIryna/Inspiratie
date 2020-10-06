@@ -50,14 +50,14 @@ span {
   }
   &__arrow-down {
     position: absolute;
-    bottom: 63px;
-    left: 0;
-    right: 0;
+    bottom: 72px;
+    left: 10px;
+	 right: 0;
     z-index: 2;
     text-align: center;
     height: fit-content;
     @include breakpoint(medium) {
-      bottom: 163px;
+      bottom: 158px;
     }
   }
 }
@@ -84,10 +84,10 @@ span {
     color: $white;
     text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.75);
     white-space: pre-line;
-    padding-bottom: 100px;
+    padding-bottom: 147px;
     @include breakpoint(medium) {
       font: 400 30px/1.13 Lato, sans-serif;
-      padding-bottom: 230px;
+      padding-bottom: 258px;
     }
   }
   &__nav {
@@ -99,7 +99,7 @@ span {
   &__arrow {
     position: absolute;
     display: inline-block;
-    z-index: 1;
+	 z-index: 1;
     height: 22px;
     outline: none;
     border: none;
@@ -107,12 +107,12 @@ span {
     cursor: pointer;
   }
   &__next {
-    top: 40px;
-    right: 40px;
+    top: 39px;
+    right: 37px;
   }
   &__prev {
-    top: 40px;
-    right: 69px;
+    top: 39px;
+    right: 64px;
   }
   &__slide {
     min-height: 85.4vh;
@@ -192,8 +192,6 @@ span {
     justify-content: space-between;
     margin: 0;
     padding: 0;
-    //  text-align: center;
-
     @include breakpoint(medium) {
     }
   }
@@ -202,7 +200,8 @@ span {
   }
   &__link {
     font: 500 26px/2 Raleway, sans-serif;
-    text-decoration: none;
+	 text-decoration: none;
+	 text-transform: uppercase;
     color: $white;
     &:active,
     &:focus,
@@ -217,8 +216,11 @@ span {
 @include breakpoint(medium) {
   .ba-header {
     top: calc(100vh - 114px);
-    height: 114px;
+	 height: 114px;
+	 padding-left: 60px;
+	 padding-right: 40px;
     &__logo {
+		 padding-top: 21px;
       width: 100%;
     }
   }
@@ -293,14 +295,14 @@ span {
     padding-bottom: 50px;
   }
   @include breakpoint(large) {
-    padding-top: 102px;
-    padding-bottom: 104px;
+    padding-top: 95px;
+    padding-bottom: 95px;
   }
   &__heading {
     font: 300 30px/1 Lato, sans-serif;
     color: #fff;
     text-transform: uppercase;
-    padding-bottom: 32px;
+    padding-bottom: 25px;
     @include breakpoint(medium) {
       font: 300 40px/1 Lato, sans-serif;
       white-space: pre-wrap;
@@ -310,10 +312,10 @@ span {
     }
   }
   &__subheading {
-    font: 400 13px/1.61 Lato, sans-serif;
-    font-style: italic;
+	 font:400 13px/1.61 Lato, sans-serif;
+	 font-style: italic;
     color: #f41353;
-    padding-bottom: 62px;
+    padding-bottom: 57px;
     @include breakpoint(large) {
       font: 400 18px/1.61 Lato, sans-serif;
     }
@@ -323,11 +325,10 @@ span {
     color: #fff;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     padding-bottom: 30px;
     @include breakpoint(medium) {
       flex-direction: row;
-      padding-bottom: 36px;
+      padding-bottom: 30px;
     }
   }
   &__photo {
@@ -339,8 +340,8 @@ span {
     flex-direction: column;
     padding-top: 30px;
     @include breakpoint(medium) {
-      padding-top: 0;
-      padding-left: 29px;
+      padding-top: 5px;
+      padding-left: 35px;
     }
   }
   &__paragraph {
@@ -355,8 +356,8 @@ span {
     }
   }
   &__sign {
-    padding-right: 26px;
-    padding-top: 25px;
+    padding-right: 30px;
+    padding-top: 14px;
   }
   &__signature {
     font: 400 37px/1.7 "Jenna Sue", sans-serif;
@@ -365,7 +366,7 @@ span {
     padding-right: 70px;
   }
   &__name {
-    font: 400 46px/1.7 "Jenna Sue", sans-serif;
+    font: 400 46px/1.3 "Jenna Sue", sans-serif;
     color: #fff;
     text-align: right;
   }
@@ -388,42 +389,42 @@ span {
       padding-bottom: 60px;
     }
     @include breakpoint(large) {
-      padding-top: 108px;
-      padding-bottom: 72px;
+      padding-top: 100px;
+      padding-bottom: 68px;
     }
   }
   &__first-question {
     text-transform: uppercase;
     text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.75);
-    font: 300 25px/1.574 Lato, sans-serif;
+    font: 300 25px/1.5 Lato, sans-serif;
     text-align: center;
     @include breakpoint(medium) {
-      font: 300 50px/1.574 Lato, sans-serif;
+      font: 300 50px/1.5 Lato, sans-serif;
     }
   }
   &__second-question {
     text-transform: uppercase;
     text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.75);
-    font: 300 26px/1.23 Lato, sans-serif;
-    padding-bottom: 33px;
+    font: 300 26px/1.2 Lato, sans-serif;
+    padding-bottom: 20px;
     text-align: center;
     @include breakpoint(medium) {
-      font: 300 60px/1.23 Lato, sans-serif;
+      font: 300 60px/1.2 Lato, sans-serif;
     }
   }
   &__contact {
     font: 400 16.5px/0.877 Lato, sans-serif;
     display: inline-block;
     background-color: #f41353;
-    padding: 15px 42px;
+    padding: 15px 35px;
     position: relative;
     &:after {
       content: " ";
-      height: 32px;
-      width: 32px;
+      height: 30px;
+      width: 30px;
       position: absolute;
       background-color: #f41353;
-      top: 6px;
+      top: 7px;
       left: 92%;
       transform: rotate(45deg);
     }
@@ -438,12 +439,12 @@ span {
   background-size: cover;
   text-align: center;
   color: #fff;
-  padding-bottom: 108px;
+  padding-bottom: 100px;
   &__title {
     text-transform: uppercase;
     font: 300 40px/1 Lato, sans-serif;
-    padding-top: 85px;
-	 padding-bottom: 22px;
+    padding-top: 75px;
+	 padding-bottom: 10px;
 	 @include breakpoint(large){
 		font: 300 50.31px/1 Lato, sans-serif;
 	 }
@@ -451,43 +452,32 @@ span {
   &__owner {
     color: #f41353;
     font: 400 12px/1.61 Lato, sans-serif;
-    font-style: italic;
-	 padding-bottom: 22px;
+	 padding-bottom: 13px;
 	 @include breakpoint(large){
 		font: 400 18px/1.61 Lato, sans-serif;
 	 }
   }
   &__infornation {
     font: 400 12px/1.71 Lato, sans-serif;
-    padding-bottom: 47px;
-	 white-space: pre-wrap;
-	 @include breakpoint(medium){
-		 
-	}
+    padding-bottom: 40px;
+	 white-space: pre-line;
 	 @include breakpoint(large){
 		font: 400 14px/1.71 Lato, sans-serif;
 	 }
   }
   &__heading {
     text-transform: uppercase;
-    font: 300 16px/2.29 Lato, sans-serif;
+    font: 300 16px/2.2 Lato, sans-serif;
     border-bottom: 1px solid #fff;
 	 display: inline-block;
-	 @include breakpoint(medium){
-		 
-	}
 	 @include breakpoint(large){
-		font: 300 22px/2.29 Lato, sans-serif;
+		font: 300 22px/2 Lato, sans-serif;
 	 }
-  }
-  &__bottom-text{
-	  max-width: 758px;
-	  margin: 0 auto;
   }
   &__description{
 	  white-space: pre-line;
 	  word-wrap:break-word;
-	  font: 400 14px/2 Lato, sans-serif;
+	  font: 400 14px/1.77 Lato, sans-serif;
   }
 }
 .large-offset-2 {
@@ -500,11 +490,10 @@ span {
   padding-left: 0;
   font: 400 14px/2 Lato, sans-serif;
   padding-top: 20px;
-  padding-bottom: 60px;
+  padding-bottom: 50px;
 
   @include breakpoint(medium) {
-    padding-right: 60px;
-    padding-left: 45px;
+    padding-left: 87px;
   }
   &__centimeters {
     justify-content: flex-end;
@@ -529,7 +518,7 @@ span {
   }
   &__heading {
     display: inline-block;
-    padding: 14px 0;
+    padding: 4px 0;
 	 background-color: #f41353;
 	 position: relative;
 	 margin-bottom: 17px;
@@ -546,17 +535,6 @@ span {
   }
 }
 .ba-gallery{
-	&__photo{
-		max-width: 100%;
-		@include breakpoint(medium){
-			max-width: 50%;
-		}
-		@include breakpoint(large){
-			max-width: 20%;
-		}
-	}
-}
-.ba-row{
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -564,6 +542,15 @@ span {
 	justify-content: center;
 	@include breakpoint(medium){
 		flex-direction: row;
+	}
+	&__photo{
+		max-width: 100%;
+		@include breakpoint(medium){
+			max-width: 50%;
+		}
+		@include breakpoint(large){
+			width: 20%;
+		}
 	}
 }
 .ba-foto {
@@ -574,7 +561,7 @@ span {
 	  justify-content: center;
 	  height: 150px;
 	@include breakpoint(large){
-		height: 250px;
+		height: 247px;
 	}
   }
   &__title{
