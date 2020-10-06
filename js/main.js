@@ -75,12 +75,24 @@ $('[data-fancybox="gallery"]').fancybox({
 	}
 });
 function initMap() {
-	// The location of Uluru
-	var uluru = {lat: -25.344, lng: 131.036};
-	// The map, centered at Uluru
+	var stephane = {lat: 50.894380, lng: 3.884980};
 	var map = new google.maps.Map(
-		 document.getElementById('map'), {zoom: 4, center: uluru});
-	// The marker, positioned at Uluru
-	var marker = new google.maps.Marker({position: uluru, map: map});
+		 document.getElementById('map'), {zoom: 18, center:stephane});
+	const marker = new google.maps.Marker({
+			position: stephane,
+			map,
+		 });
+		 const contentString =
+		 '<div class="content">' +
+		 '<div class="bodyContent">' +
+		 "<p><b>STEPHANIE</b></br>Stationstraat 110, 9550 Herzele.</p>" +
+		 "</div>" +
+		 "</div>";
+	  const infowindow = new google.maps.InfoWindow({
+		 content: contentString,
+	  });
+	  marker.addListener("click", () => {
+		 infowindow.open(map, marker);
+	  });
  };
 
