@@ -479,9 +479,15 @@ span {
     }
   }
   &__description {
-    white-space: pre-line;
-    word-wrap: break-word;
-    font: 400 14px/1.77 Lato, sans-serif;
+	 font: 400 14px/1.77 Lato, sans-serif;
+	 margin: auto;
+	 @include breakpoint(large) {
+		 max-width: 76%;
+		 padding-bottom: 25px;
+	 }
+	 &:last-child{
+		padding-bottom: 0;
+	 }
   }
 }
 .large-offset-2 {

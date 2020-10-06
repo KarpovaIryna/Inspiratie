@@ -5954,9 +5954,14 @@ span {
       .ba-prijzen__heading {
         font: 300 22px/2 Lato, sans-serif; } }
   .ba-prijzen__description {
-    white-space: pre-line;
-    word-wrap: break-word;
-    font: 400 14px/1.77 Lato, sans-serif; }
+    font: 400 14px/1.77 Lato, sans-serif;
+    margin: auto; }
+    @media print, screen and (min-width: 64em) {
+      .ba-prijzen__description {
+        max-width: 76%;
+        padding-bottom: 25px; } }
+    .ba-prijzen__description:last-child {
+      padding-bottom: 0; }
 
 @media print, screen and (min-width: 64em) {
   .large-offset-2 {
