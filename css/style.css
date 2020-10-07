@@ -5954,12 +5954,14 @@ span {
       .ba-prijzen__heading {
         font: 300 22px/2 Lato, sans-serif; } }
   .ba-prijzen__description {
-    font: 400 14px/1.77 Lato, sans-serif;
-    margin: auto; }
+    font: 400 12px/1.77 Lato, sans-serif;
+    margin: auto;
+    padding-bottom: 5px; }
     @media print, screen and (min-width: 64em) {
       .ba-prijzen__description {
         max-width: 76%;
-        padding-bottom: 25px; } }
+        padding-bottom: 25px;
+        font: 400 14px/1.77 Lato, sans-serif; } }
     .ba-prijzen__description:last-child {
       padding-bottom: 0; }
 
@@ -6165,18 +6167,30 @@ span {
 
 .ba-footer {
   background: #000;
-  height: 115px;
-  padding-left: 65px;
-  padding-right: 40px;
+  height: 85px;
+  padding-left: 20px;
+  padding-right: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media print, screen and (min-width: 64em) {
+    .ba-footer {
+      padding-left: 65px;
+      padding-right: 40px;
+      height: 115px; } }
   .ba-footer__logo {
     display: inline-block;
-    padding-top: 10px; }
+    padding-top: 10px;
+    width: 35%; }
+    @media print, screen and (min-width: 64em) {
+      .ba-footer__logo {
+        width: 50%; } }
   .ba-footer__copyright {
-    font: 400 13px/2.46 Lato, sans-serif;
+    font: 400 8px/2.46 Lato, sans-serif;
     color: #fff; }
+    @media print, screen and (min-width: 40em) {
+      .ba-footer__copyright {
+        font: 400 13px/2.46 Lato, sans-serif; } }
   .ba-footer__link {
     margin-top: 4px;
     display: inline-block; }

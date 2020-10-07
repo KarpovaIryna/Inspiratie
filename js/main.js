@@ -20,7 +20,14 @@ $(".hamburger").click(function(e) {
 	$(".ba-nav").toggleClass('is-active');
 	$(this).toggleClass('is-active');
 	$(".ba-header").toggleClass('is-active');
- })
+ });
+ $('ul li a').click(function() {
+	if ( $('.ba-nav').hasClass('is-active')) {
+	 $('.ba-nav').removeClass('is-active');
+	 $('.hamburger').removeClass('is-active');
+	 $('.ba-header').removeClass('is-active');
+	}
+}) 
 
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
