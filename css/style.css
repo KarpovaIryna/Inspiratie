@@ -5920,7 +5920,7 @@ span {
   background-size: cover;
   text-align: center;
   color: #fff;
-  padding-bottom: 100px; }
+  padding-bottom: 80px; }
   .ba-prijzen__title {
     text-transform: uppercase;
     font: 300 40px/1 Lato, sans-serif;
@@ -5956,7 +5956,7 @@ span {
   .ba-prijzen__description {
     font: 400 12px/1.77 Lato, sans-serif;
     margin: auto;
-    padding-bottom: 5px; }
+    padding-bottom: 4px; }
     @media print, screen and (min-width: 64em) {
       .ba-prijzen__description {
         max-width: 76%;
@@ -6108,14 +6108,17 @@ span {
     padding-left: 40px; }
 
 .ba-form {
-  text-align: right; }
+  text-align: right;
+  position: relative; }
+  .ba-form br {
+    display: none; }
   .ba-form__field {
     border: 1px solid #fff;
     background: rgba(255, 255, 255, 0.5);
     margin-bottom: 4px;
     height: 26px; }
     .ba-form__field::placeholder {
-      color: #fff;
+      color: #ffff;
       font: italic 300 14px/1.4 Arial, sans-serif; }
   .ba-form__comment {
     border: 1px solid #fff;
@@ -6127,22 +6130,14 @@ span {
       font: italic 400 13px/1 Arial, sans-serif;
       vertical-align: baseline; }
   .ba-form__button {
-    padding: 5px 21px;
+    padding: 7px 32px 7px 21px;
     background-color: #f41353;
     display: inline-block;
+    border: none;
     position: relative;
     font: 700 14px/1.57 Lato, sans-serif;
-    margin-right: 8px;
+    clip-path: polygon(0% 0%, 91% 0, 100% 50%, 91% 100%, 0 100%);
     color: #fff; }
-    .ba-form__button:before {
-      content: " ";
-      clip-path: polygon(50% 0%, 69% 50%, 50% 100%, 36% 50%);
-      height: 100%;
-      width: 50px;
-      position: absolute;
-      background-color: #f41353;
-      bottom: 0;
-      left: 78%; }
     .ba-form__button:hover {
       transform: skew(-10deg); }
 
@@ -6160,10 +6155,9 @@ span {
     text-decoration: underline; }
 
 .icon {
-  height: 21px;
   width: 16px;
-  fill: #f41353;
-  margin-right: 8px; }
+  height: 20px;
+  margin-right: 5px; }
 
 .ba-footer {
   background: #000;
